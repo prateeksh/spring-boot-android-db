@@ -29,25 +29,22 @@ databaseChangeLog:
                   constraints:
                   nullable: false
               - column:
-                name: phone
-                type: varchar(255)
-                constraints:
-                nullable: false
-
+                  name: phone
+                  type: varchar(255)
+                  constraints:
+                  nullable: false
               - column:
-              name: google
-              type: varchar(255)
-              constraints:
-              nullable: false
-
+                  name: google
+                  type: varchar(255)
+                  constraints:
+                  nullable: false
               - column:
-              name: facebook
-              type: varchar(255)
-              constraints:
-              nullable: false
-
+                  name: facebook
+                  type: varchar(255)
+                  constraints:
+                  nullable: false
               - column:
-              name: blog
-              type: varchar(255)
-              constraints:
-              nullable: false
+                  name: blog
+                  type: varchar(255)
+                  constraints:
+                  nullable: false
