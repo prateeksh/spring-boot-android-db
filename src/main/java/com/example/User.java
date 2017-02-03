@@ -23,11 +23,6 @@ public class User {
   String company;
   @NotEmpty
   String phone;
-  String work;
-  @NotEmpty
-  String hangout;
-  @NotEmpty
-  String skype;
   @NotEmpty
   String google;
   @NotEmpty
@@ -85,29 +80,6 @@ public class User {
     this.phone = phone;
   }
 
-  public String getWork() {
-    return work;
-  }
-
-  public void setWork(String work) {
-    this.work = work;
-  }
-
-  public String getHangout() {
-    return hangout;
-  }
-
-  public void setHangout(String hangout) {
-    this.hangout = hangout;
-  }
-
-  public String getSkype() {
-    return skype;
-  }
-
-  public void setSkype(String skype) {
-    this.skype = skype;
-  }
 
   public String getGoogle() {
     return google;
