@@ -1,33 +1,41 @@
 package com.example;
 
-import org.hibernate.validator.constraints.NotEmpty;
-
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "user")
 public class User {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private long id;
 
-  @NotEmpty
+  @Column(name = "name",nullable= false)
+
   String name;
   String image;
-  @NotEmpty
+  @Column(name = "occupation",nullable= false)
+
   String occupation;
-  @NotEmpty
+  @Column(name = "company",nullable= false)
+
   String company;
-  @NotEmpty
+  @Column(name = "phone",nullable= false)
+
   String phone;
-  @NotEmpty
+  @Column(name = "google",nullable= false)
+
   String google;
-  @NotEmpty
+  @Column(name = "facebook",nullable= false)
+
   String facebook;
-  @NotEmpty
+  @Column(name = "blog", nullable= false)
+
   String blog;
 
   public User(){}
