@@ -15,15 +15,17 @@ public class User {
   private long id;
 
   @NotEmpty
-  String name;
+  private String name;
   @NotEmpty
-  String occupation;
+  private String image;
   @NotEmpty
-  String company;
+  private String occupation;
   @NotEmpty
-  String phone;
+  private String company;
   @NotEmpty
-  String google;
+  private String phone;
+  @NotEmpty
+  private String google;
 
   public User(){}
 
@@ -41,6 +43,14 @@ public class User {
 
   public void setName(String name) {
     this.name = name;
+  }
+
+  public String getImage(){
+    return image;
+  }
+
+  public void setImage(String image){
+    this.image = image;
   }
 
   public String getOccupation() {
