@@ -16,7 +16,6 @@ public class User {
 
   @NotEmpty
   String name;
-  String image;
   @NotEmpty
   String occupation;
   @NotEmpty
@@ -25,10 +24,6 @@ public class User {
   String phone;
   @NotEmpty
   String google;
-  @NotEmpty
-  String facebook;
-  @NotEmpty
-  String blog;
 
   public User(){}
 
@@ -46,14 +41,6 @@ public class User {
 
   public void setName(String name) {
     this.name = name;
-  }
-
-  public String getImage() {
-    return image;
-  }
-
-  public void setImage(String image) {
-    this.image = image;
   }
 
   public String getOccupation() {
@@ -89,20 +76,5 @@ public class User {
     this.google = google;
   }
 
-  public String getFacebook() {
-    return facebook;
-  }
-
-  public void setFacebook(String facebook) {
-    this.facebook = facebook;
-  }
-
-  public String getBlog() {
-    return blog;
-  }
-
-  public void setBlog(String blog) {
-    this.blog = blog;
-  }
 }
 
