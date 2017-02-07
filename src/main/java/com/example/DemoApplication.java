@@ -18,7 +18,7 @@ public class DemoApplication {
   @RequestMapping("/user")
   @ResponseBody
   String hello() {
-    return "User";
+    return "Hello Users";
   }
 
   public static void main(String[] args) {
