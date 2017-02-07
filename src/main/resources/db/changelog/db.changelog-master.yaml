@@ -20,9 +20,9 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: image
-                  type: blob(255)
+                  type: varchar(255)
                   constraints:
-                    nullable: false
+                    nullable: true
               - column:
                   name: occupation
                   type: varchar(255)
