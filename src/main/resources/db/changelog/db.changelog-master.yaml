@@ -15,31 +15,31 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: name
-                  type: varchar(50)
+                  type: varchar(255)
                   constraints:
                     nullable: false
               - column:
                   name: image
-                  type: blob(50)
+                  type: blob(255)
                   constraints:
                     nullable: false
               - column:
                   name: occupation
-                  type: varchar(50)
+                  type: varchar(255)
                   constraints:
                     nullable: false
               - column:
                   name: company
-                  type: varchar(50)
+                  type: varchar(255)
                   constraints:
                     nullable: false
               - column:
                   name: phone
-                  type: varchar(50)
+                  type: varchar(255)
                   constraints:
                     nullable: false
               - column:
                   name: google
-                  type: varchar(50)
+                  type: varchar(255)
                   constraints:
                     nullable: false
