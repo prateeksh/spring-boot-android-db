@@ -28,7 +28,7 @@ public class UserController {
   }
 
   @RequestMapping(value = "/newData", method = RequestMethod.POST)
-  public ResponseEntity<User> insert (@RequestBody User user) {
+  public ResponseEntity<User> update (@RequestBody User user) {
     repository.save(user);
     return get(user.getId());
   }
