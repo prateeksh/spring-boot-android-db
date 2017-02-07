@@ -22,7 +22,7 @@ databaseChangeLog:
                   name: image
                   type: varchar(255)
                   constraints:
-                    nullable: true
+                    nullable: false
               - column:
                   name: occupation
                   type: varchar(255)
