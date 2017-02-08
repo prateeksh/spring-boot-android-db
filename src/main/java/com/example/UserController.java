@@ -29,11 +29,10 @@ public class UserController {
 
   @RequestMapping(value = "/new", method = RequestMethod.POST)
   public ResponseEntity<User> update(@RequestBody User user) {
-    repository.save(user);
-    return get(user.getId());
+    return new ResponseEntity<User>(repository.save(user),HttpStatus.CREATED);
   }
 
-  @RequestMapping
+  @RequestMapping(method = RequestMethod.GET)
   public List<User> all() {
     return repository.findAll();
   }

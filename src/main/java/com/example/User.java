@@ -10,6 +10,7 @@ import javax.persistence.Id;
 @Entity
 public class User {
 
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private long id;
@@ -17,6 +18,7 @@ public class User {
   @NotEmpty
   private String name;
 
+  public User(){}
 
   public long getId(){
     return id;
