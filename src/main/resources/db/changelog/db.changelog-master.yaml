@@ -12,19 +12,9 @@ databaseChangeLog:
                   autoIncrement: true
                   constraints:
                     primaryKey: true
-                    nullable: false
+                    nullable: true
               - column:
                   name: name
                   type: varchar(255)
                   constraints:
-                    nullable: false
-              - column:
-                  name: occupation
-                  type: varchar(255)
-                  constraints:
-                    nullable: false
-              - column:
-                  name: google
-                  type: varchar(255)
-                  constraints:
-                    nullable: false
+                    nullable: true

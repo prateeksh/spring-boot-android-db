@@ -17,11 +17,6 @@ public class User {
   @NotEmpty
   private String name;
 
-  @NotEmpty
-  private String occupation;
-
-  @NotEmpty
-  private String google;
 
   public long getId(){
     return id;
@@ -39,21 +34,6 @@ public class User {
     this.name = name;
   }
 
-  public String getOccupation() {
-    return occupation;
-  }
-
-  public void setOccupation(String occupation) {
-    this.occupation = occupation;
-  }
-
-  public String getGoogle() {
-    return google;
-  }
-
-  public void setGoogle(String google) {
-    this.google = google;
-  }
 
 }
 
