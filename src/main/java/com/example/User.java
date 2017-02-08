@@ -2,12 +2,15 @@ package com.example;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "user")
 public class User {
 
   @Id
@@ -15,19 +18,17 @@ public class User {
   private long id;
 
   @NotEmpty
+  @Column(name = "name")
   private String name;
+
   @NotEmpty
-  private String image;
-  @NotEmpty
+  @Column(name = "occupation")
   private String occupation;
+
   @NotEmpty
-  private String company;
-  @NotEmpty
-  private String phone;
-  @NotEmpty
+  @Column(name = "google")
   private String google;
 
-  public User(){}
 
   public long getId(){
     return id;
@@ -45,14 +46,6 @@ public class User {
     this.name = name;
   }
 
-  public String getImage(){
-    return image;
-  }
-
-  public void setImage(String image){
-    this.image = image;
-  }
-
   public String getOccupation() {
     return occupation;
   }
@@ -61,21 +54,6 @@ public class User {
     this.occupation = occupation;
   }
 
-  public String getCompany() {
-    return company;
-  }
-
-  public void setCompany(String company) {
-    this.company = company;
-  }
-
-  public String getPhone() {
-    return phone;
-  }
-
-  public void setPhone(String phone) {
-    this.phone = phone;
-  }
 
   public String getGoogle() {
     return google;
