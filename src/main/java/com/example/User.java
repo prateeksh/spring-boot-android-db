@@ -23,7 +23,6 @@ public class User {
   @NotEmpty
   private String google;
 
-
   public long getId(){
     return id;
   }
