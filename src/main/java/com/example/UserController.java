@@ -19,21 +19,21 @@ public class UserController {
   }
 
   @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-  public ResponseEntity<User> get(@PathVariable("id") Long id) {
-    User user = repository.findOne(id);
+  public ResponseEntity<UserData> get(@PathVariable("id") Long id) {
+    UserData user = repository.findOne(id);
     if (null == user) {
-      return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
+      return new ResponseEntity<UserData>(HttpStatus.NOT_FOUND);
     }
-    return new ResponseEntity<User>(user, HttpStatus.OK);
+    return new ResponseEntity<UserData>(user, HttpStatus.OK);
   }
 
   @RequestMapping(value = "/new", method = RequestMethod.POST)
-  public ResponseEntity<User> update(@RequestBody User user) {
-    return new ResponseEntity<User>(repository.save(user),HttpStatus.CREATED);
+  public ResponseEntity<UserData> update(@RequestBody UserData user) {
+    return new ResponseEntity<UserData>(repository.save(user),HttpStatus.CREATED);
   }
 
   @RequestMapping(method = RequestMethod.GET)
-  public List<User> all() {
+  public List<UserData> all() {
     return repository.findAll();
   }
 

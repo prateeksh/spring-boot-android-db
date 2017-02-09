@@ -4,17 +4,17 @@ databaseChangeLog:
       author: prateek
       changes:
         - createTable:
-            tableName: user
+            tableName: userdata
             columns:
               - column:
                   name: id
-                  type: int
+                  type: bigint
                   autoIncrement: true
                   constraints:
                     primaryKey: true
-                    nullable: true
+                    nullable: false
               - column:
                   name: name
                   type: varchar(255)
                   constraints:
-                    nullable: true
+                    nullable: false

@@ -8,7 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class User {
+public class UserData {
 
 
   @Id
@@ -18,7 +18,7 @@ public class User {
   @NotEmpty
   private String name;
 
-  public User(){}
+  public UserData(){}
 
   public long getId(){
     return id;
