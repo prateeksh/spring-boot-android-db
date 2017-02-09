@@ -36,4 +36,10 @@ public class UserController {
   public List<User> all() {
     return repository.findAll();
   }
+
+    @RequestMapping("/data")
+    @ResponseBody
+    String data(){
+        return "check data";
+    }
 }
