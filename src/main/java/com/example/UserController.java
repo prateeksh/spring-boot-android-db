@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/userdata")
 public class UserController {
 
   private UserRepository repository;
@@ -29,7 +29,8 @@ public class UserController {
 
   @RequestMapping(value = "/new", method = RequestMethod.POST)
   public ResponseEntity<UserData> update(@RequestBody UserData user) {
-    return new ResponseEntity<UserData>(repository.save(user),HttpStatus.CREATED);
+      repository.save(user);
+    return get(user.getId());
   }
 
   @RequestMapping(method = RequestMethod.GET)
