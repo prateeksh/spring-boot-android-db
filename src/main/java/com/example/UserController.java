@@ -15,9 +15,12 @@ import java.util.List;
 @RestController
 public class UserController {
 
-  @Autowired
   private UserRepository repository;
 
+  @Autowired
+  public UserController(UserRepository repository){
+    this.repository = repository;
+  }
 
   @RequestMapping(value = "/{id}", method = RequestMethod.GET)
   public ResponseEntity<UserData> get(@PathVariable("id") Long id) {
@@ -30,7 +33,6 @@ public class UserController {
 
   @RequestMapping(value = "/addnew", method = RequestMethod.POST)
   public ResponseEntity<UserData> update(@RequestBody UserData user) {
-      user.setName(user.getName());
       repository.save(user);
     return get(user.getId());
   }
