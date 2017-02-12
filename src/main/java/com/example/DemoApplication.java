@@ -9,19 +9,19 @@ import org.springframework.stereotype.*;
 @SpringBootApplication
 public class DemoApplication {
 
-  @RequestMapping("/")
-  @ResponseBody
-  String home() {
-    return "Hello! This is a demo application linked to this tutorial: http://jkutner.github.io/2016/08/18/android-backend-api-heroku-retrofit.html";
-  }
+    @RequestMapping("/")
+    @ResponseBody
+    String home() {
+        return "Hello! This is a demo application linked to this tutorial: http://jkutner.github.io/2016/08/18/android-backend-api-heroku-retrofit.html";
+    }
 
-  @RequestMapping("/user")
-  @ResponseBody
-  String hello() {
-    return "Hello Users update 3";
-  }
+    @RequestMapping("/user")
+    @ResponseBody
+    String hello() {
+        return "Hello Users update 3";
+    }
 
-  public static void main(String[] args) {
-    SpringApplication.run(DemoApplication.class, args);
-  }
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
 }

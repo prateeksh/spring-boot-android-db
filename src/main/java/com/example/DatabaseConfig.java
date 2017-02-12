@@ -12,11 +12,11 @@ import javax.sql.DataSource;
 @EnableAutoConfiguration
 public class DatabaseConfig {
 
-  @Bean
-  @Primary
-  @ConfigurationProperties(prefix = "spring.datasource")
-  public DataSource dataSource() {
-    return new org.apache.tomcat.jdbc.pool.DataSource();
-  }
+    @Bean
+    @Primary
+    @ConfigurationProperties(prefix = "spring.datasource")
+    public DataSource dataSource() {
+        return new org.apache.tomcat.jdbc.pool.DataSource();
+    }
 
 }
