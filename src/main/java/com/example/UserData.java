@@ -23,6 +23,22 @@ public class UserData {
     @Column(name = "name")
     private String name;
 
+    @NotEmpty
+    @Column(name = "occupation")
+    private String occupation;
+
+    @NotEmpty
+    @Column(name = "company")
+    private String company;
+
+    @NotEmpty
+    @Column(name = "phone")
+    private String phone;
+
+    @NotEmpty
+    @Column(name = "google")
+    private String google;
+
     public UserData() {
     }
 
@@ -40,6 +56,38 @@ public class UserData {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getOccupation() {
+        return occupation;
+    }
+
+    public void setOccupation(String occupation) {
+        this.occupation = occupation;
+    }
+
+    public String getCompany(){
+        return company;
+    }
+
+    public void setCompany(String company){
+        this.company = company;
+    }
+
+    public String getPhone(){
+        return phone;
+    }
+
+    public void setPhone(String phone){
+        this.phone = phone;
+    }
+
+    public String getGoogle() {
+        return google;
+    }
+
+    public void setGoogle(String google) {
+        this.google = google;
     }
 
 }

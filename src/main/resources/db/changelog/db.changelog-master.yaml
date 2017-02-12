@@ -18,3 +18,23 @@ databaseChangeLog:
                   type: varchar(255)
                   constraints:
                     nullable: false
+              - column:
+                  name: occupation
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: company
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: phone
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: google
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
