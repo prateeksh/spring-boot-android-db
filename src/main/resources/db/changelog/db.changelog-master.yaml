@@ -20,7 +20,7 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: image
-                  type: varchar(max)
+                  type: blob
                   constraints:
                     nullable: false
               - column:

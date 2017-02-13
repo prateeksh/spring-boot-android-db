@@ -25,7 +25,7 @@ public class UserData {
 
     @NotEmpty
     @Column(name = "image")
-    private String image;
+    private byte[] image;
 
     @NotEmpty
     @Column(name = "occupation")
@@ -62,11 +62,11 @@ public class UserData {
         this.name = name;
     }
 
-    public String getImage() {
+    public byte[] getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 
