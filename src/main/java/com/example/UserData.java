@@ -24,6 +24,10 @@ public class UserData {
     private String name;
 
     @NotEmpty
+    @Column(name = "image")
+    private String image;
+
+    @NotEmpty
     @Column(name = "occupation")
     private String occupation;
 
@@ -56,6 +60,14 @@ public class UserData {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getOccupation() {
